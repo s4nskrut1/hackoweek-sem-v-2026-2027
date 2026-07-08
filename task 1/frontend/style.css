@@ -1,0 +1,158 @@
+:root {
+  --bg: #0f1115;
+  --surface: #161922;
+  --surface-2: #1d2029;
+  --border: #262a35;
+  --text: #e8e9ed;
+  --text-dim: #9a9ea8;
+  --accent: #7c9cff;
+  --accent-dim: #5a71b8;
+  --success: #4ade80;
+  --danger: #f87171;
+  --radius: 12px;
+  --shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 36px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: rgba(15,17,21,0.85);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 18px; }
+.brand-mark { width: 10px; height: 10px; border-radius: 3px; background: var(--accent); display: inline-block; }
+.brand-sub { color: var(--text-dim); font-weight: 400; }
+
+.tabs { display: flex; gap: 4px; background: var(--surface); padding: 4px; border-radius: 10px; }
+.tab-btn {
+  background: transparent; border: none; color: var(--text-dim);
+  padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 500;
+  transition: all .15s ease;
+}
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active { background: var(--surface-2); color: var(--text); }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 40px 24px 80px; }
+
+.panel { display: none; }
+.panel.active { display: block; animation: fadeIn .25s ease; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+.panel-header h1 { margin: 0 0 4px; font-size: 26px; font-weight: 650; }
+.panel-header p { margin: 0 0 28px; color: var(--text-dim); font-size: 14px; }
+
+.filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+input, select, textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  font-family: inherit;
+  outline: none;
+  transition: border-color .15s ease;
+}
+input:focus, select:focus, textarea:focus { border-color: var(--accent); }
+
+.btn {
+  border: none; border-radius: 8px; padding: 10px 18px;
+  font-size: 14px; font-weight: 600; cursor: pointer;
+  transition: transform .1s ease, opacity .15s ease;
+}
+.btn:active { transform: scale(0.97); }
+.btn.primary { background: var(--accent); color: #0f1115; }
+.btn.success { background: var(--success); color: #0f1115; }
+.btn.danger { background: var(--danger); color: #0f1115; }
+.btn.full { width: 100%; margin-top: 6px; }
+.btn:hover { opacity: 0.9; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.item-card { cursor: pointer; display: flex; flex-direction: column; gap: 10px; }
+.item-card:hover { border-color: var(--accent-dim); }
+.item-top { display: flex; justify-content: space-between; align-items: center; }
+.badge { font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 20px; text-transform: uppercase; letter-spacing: .04em; }
+.badge.lost { background: rgba(248,113,113,0.15); color: var(--danger); }
+.badge.found { background: rgba(74,222,128,0.15); color: var(--success); }
+.badge.active { background: rgba(124,156,255,0.15); color: var(--accent); }
+.badge.claimed { background: rgba(250,204,21,0.15); color: #facc15; }
+.badge.returned { background: rgba(154,158,168,0.15); color: var(--text-dim); }
+
+.item-card h3 { margin: 0; font-size: 16px; }
+.item-card p { margin: 0; font-size: 13px; color: var(--text-dim); line-height: 1.5; }
+.item-meta { display: flex; gap: 10px; font-size: 12px; color: var(--text-dim); }
+
+.form { display: flex; flex-direction: column; gap: 14px; margin-bottom: 20px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+label { font-size: 13px; color: var(--text-dim); display: flex; flex-direction: column; gap: 6px; }
+
+.result { font-size: 13px; margin-top: 8px; }
+.result.ok { color: var(--success); }
+.result.err { color: var(--danger); }
+
+.pagination { display: flex; gap: 8px; justify-content: center; margin-top: 24px; }
+.pagination button {
+  background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 13px;
+}
+.pagination button.active { background: var(--accent); color: #0f1115; border-color: var(--accent); }
+
+.stats .card { text-align: center; }
+.stats .card .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+.stats .card .lbl { font-size: 12px; color: var(--text-dim); margin-top: 4px; text-transform: uppercase; letter-spacing: .04em; }
+
+.modal-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+  align-items: center; justify-content: center; z-index: 100; padding: 20px;
+}
+.modal-overlay.active { display: flex; }
+.modal { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  max-width: 480px; width: 100%; padding: 28px; position: relative; box-shadow: var(--shadow); }
+.modal-close { position: absolute; top: 14px; right: 16px; background: none; border: none; color: var(--text-dim);
+  font-size: 20px; cursor: pointer; }
+.modal h2 { margin-top: 0; font-size: 18px; }
+.modal .detail-row { display: flex; justify-content: space-between; font-size: 13px; padding: 6px 0; border-bottom: 1px solid var(--border); }
+.modal .detail-row span:first-child { color: var(--text-dim); }
+
+@media (max-width: 700px) {
+  .filters, .form-row { grid-template-columns: 1fr; }
+  .topbar { flex-direction: column; gap: 12px; padding: 16px; }
+} 
