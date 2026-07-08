@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LostLink Campus</title>
+<link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark"></span>
+    <span class="brand-name">LostLink <span class="brand-sub">Campus</span></span>
+  </div>
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="browse">Browse</button>
+    <button class="tab-btn" data-tab="report">Report Item</button>
+    <button class="tab-btn" data-tab="track">Track Claim</button>
+    <button class="tab-btn" data-tab="admin">Admin</button>
+  </nav>
+</header>
+
+<main class="container">
+
+  <!-- BROWSE -->
+  <section id="browse" class="panel active">
+    <div class="panel-header">
+      <h1>Browse Items</h1>
+      <p>Search lost and found reports across campus.</p>
+    </div>
+
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search by title or description..." />
+      <select id="filterType">
+        <option value="">All Types</option>
+        <option value="lost">Lost</option>
+        <option value="found">Found</option>
+      </select>
+      <select id="filterCategory"><option value="">All Categories</option></select>
+      <select id="filterLocation"><option value="">All Locations</option></select>
+      <button id="applyFilters" class="btn primary">Search</button>
+    </div>
+
+    <div id="itemsGrid" class="grid"></div>
+    <div id="pagination" class="pagination"></div>
+  </section>
+
+  <!-- REPORT -->
+  <section id="report" class="panel">
+    <div class="panel-header">
+      <h1>Report an Item</h1>
+      <p>Let the community know about something you lost or found.</p>
+    </div>
+
+    <form id="reportForm" class="card form">
+      <div class="form-row">
+        <label>Type
+          <select name="item_type" required>
+            <option value="lost">Lost</option>
+            <option value="found">Found</option>
+          </select>
+        </label>
+        <label>Category
+          <select name="category" id="reportCategory" required></select>
+        </label>
+      </div>
+
+      <label>Title
+        <input type="text" name="title" placeholder="e.g. Black Wallet" required />
+      </label>
+
+      <label>Description
+        <textarea name="description" rows="3" placeholder="Describe the item in detail..." required></textarea>
+      </label>
+
+      <div class="form-row">
+        <label>Location
+          <select name="location" id="reportLocation" required></select>
+        </label>
+        <label>Date
+          <input type="date" name="date_occurred" />
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>Your Name
+          <input type="text" name="reporter_name" required />
+        </label>
+        <label>Email
+          <input type="email" name="reporter_email" required />
+        </label>
+        <label>Phone
+          <input type="text" name="reporter_phone" placeholder="10 digit number" required />
+        </label>
+      </div>
+
+      <button type="submit" class="btn primary full">Submit Report</button>
+      <div id="reportResult" class="result"></div>
+    </form>
+  </section>
+
+  <!-- TRACK / CLAIM -->
+  <section id="track" class="panel">
+    <div class="panel-header">
+      <h1>Track a Claim</h1>
+      <p>Enter your claim ID to check its status.</p>
+    </div>
+
+    <div class="card form">
+      <label>Claim ID
+        <input type="number" id="claimIdInput" placeholder="e.g. 4" />
+      </label>
+      <button id="trackBtn" class="btn primary">Track Status</button>
+      <div id="trackResult" class="result"></div>
+    </div>
+  </section>
+
+  <!-- ADMIN -->
+  <section id="admin" class="panel">
+    <div class="panel-header">
+      <h1>Admin Panel</h1>
+      <p>Manage claims, statistics and reports.</p>
+    </div>
+
+    <div class="card form">
+      <label>Admin Key
+        <input type="password" id="adminKey" placeholder="Enter admin key" />
+      </label>
+      <button id="loadStatsBtn" class="btn primary">Load Statistics</button>
+    </div>
+
+    <div id="statsGrid" class="grid stats"></div>
+
+    <div class="card form">
+      <h3>Manage a Claim</h3>
+      <div class="form-row">
+        <input type="number" id="adminClaimId" placeholder="Claim ID" />
+        <button id="approveBtn" class="btn success">Approve</button>
+        <button id="rejectBtn" class="btn danger">Reject</button>
+      </div>
+      <div id="adminClaimResult" class="result"></div>
+    </div>
+
+    <div class="card form">
+      <h3>Manage an Item</h3>
+      <div class="form-row">
+        <input type="number" id="adminItemId" placeholder="Item ID" />
+        <button id="markReturnedBtn" class="btn success">Mark Returned</button>
+        <button id="deleteItemBtn" class="btn danger">Delete (Fake Report)</button>
+      </div>
+      <div id="adminItemResult" class="result"></div>
+    </div>
+  </section>
+
+</main>
+
+<div id="modal" class="modal-overlay">
+  <div class="modal">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="static/js/app.js"></script>
+</body>
+</html> 
