@@ -1,10 +1,10 @@
 <div align="center">
 
-# ✦ HACKOWEEK
+# HACKOWEEK
 
-### Semester V · Build · Analyse · Experiment
+### five tasks · one semester · a lot of figuring things out
 
-A collection of Hackoweek tasks exploring **web development, data analysis, mathematics for ML, and machine-learning workflows**.
+A collection of things I built, analysed and experimented with — from web apps and interfaces to the maths and workflows behind machine learning.
 
 <br>
 
@@ -12,196 +12,170 @@ A collection of Hackoweek tasks exploring **web development, data analysis, math
 
 <br><br>
 
-[ Task 01 ](#task-01--lostlink-campus) · [ Task 02 ](#task-02--eduinsight) · [ Task 03 ](#task-03--linear-algebra--calculus-for-ml) · [ Task 04 ](#task-04--student-performance-analysis) · [ Task 05 ](#task-05--model-evaluation--feature-engineering)
+`01` LostLink Campus &nbsp;·&nbsp; `02` EduInsight &nbsp;·&nbsp; `03` Maths for ML &nbsp;·&nbsp; `04` Data Analysis &nbsp;·&nbsp; `05` ML Evaluation
 
 </div>
 
 ---
 
-## ✦ The collection
+## 01 / LostLink Campus
 
-| Task | Focus | Format |
-|---|---|---|
-| **01** | LostLink Campus · Web App | HTML · CSS · JS · Flask · Database |
-| **02** | EduInsight | Project files + screenshots |
-| **03** | Linear Algebra & Calculus for ML | Jupyter Notebook |
-| **04** | Student Performance Analysis | Jupyter Notebook |
-| **05** | Model Evaluation & Feature Engineering | Jupyter Notebook |
+### Lost something? Start here.
 
-The tasks move from **building interfaces and applications** into the mathematical and analytical foundations behind machine learning.
+A campus lost-and-found web application built around reporting, discovering and claiming lost items.
 
----
+The project brings together a frontend, **Flask backend** and database-driven functionality rather than stopping at a static interface.
 
-# Task 01 · LostLink Campus
+**What’s inside**
 
-### A campus lost-and-found platform
+`report items` · `browse` · `claims` · `admin panel` · `item management` · `statistics`
 
-A web application designed around a simple campus problem: making it easier to **report, discover and claim lost items**.
-
-The project combines a frontend interface with a Flask backend and database-driven functionality.
-
-### What it covers
-
-- Lost & found item reporting
-- Browse and item discovery
-- Claim workflow
-- Admin panel
-- Item management
-- Claim approval / rejection
-- Statistics and dashboard-style information
-- Frontend ↔ backend integration
-
-### Stack
+**Stack**
 
 <img src="https://skillicons.dev/icons?i=html,css,js,flask,sqlite" alt="HTML CSS JavaScript Flask SQLite" />
 
-### Preview
+### A look at it
 
 <p align="center">
-  <img src="assets/task%201/task%201.png" alt="LostLink Campus preview" width="48%">
-  <img src="assets/task%201/task-1.png" alt="LostLink Campus interface" width="48%">
+  <img src="assets/task%201/task%201.png" alt="LostLink Campus screenshot 1" width="82%">
 </p>
 
-**→ Source:** [`task 1/`](./task%201/)
+<p align="center">
+  <img src="assets/task%201/task-1.png" alt="LostLink Campus screenshot 2" width="82%">
+</p>
+
+**→ [`open the project`](./task%201/)**
 
 ---
 
-# Task 02 · EduInsight
+## 02 / EduInsight
 
-### An education-focused project
+### An education-focused build
 
-The second task is included with its project archive and a set of screenshots showing the implemented result.
+The second task is included as a project archive, with screenshots showing the implemented result.
 
-### Preview
+### A look at it
 
 <p align="center">
-  <img src="assets/task%202/Screenshot%20(670).png" alt="EduInsight preview 1" width="48%">
-  <img src="assets/task%202/Screenshot%20(671).png" alt="EduInsight preview 2" width="48%">
+  <img src="assets/task%202/Screenshot%20(670).png" alt="EduInsight screenshot 1" width="82%">
 </p>
 
 <p align="center">
-  <img src="assets/task%202/Screenshot%20(672).png" alt="EduInsight preview 3" width="48%">
-  <img src="assets/task%202/Screenshot%20(673).png" alt="EduInsight preview 4" width="48%">
+  <img src="assets/task%202/Screenshot%20(671).png" alt="EduInsight screenshot 2" width="82%">
 </p>
 
-**→ Screenshots:** [`assets/task 2/`](./assets/task%202/)
+<p align="center">
+  <img src="assets/task%202/Screenshot%20(672).png" alt="EduInsight screenshot 3" width="82%">
+</p>
 
-**→ Project archive:** [`Task 2 - EduInsight.zip`](./Task%202%20-%20EduInsight.zip)
+<p align="center">
+  <img src="assets/task%202/Screenshot%20(673).png" alt="EduInsight screenshot 4" width="82%">
+</p>
+
+**→ [`view screenshots`](./assets/task%202/)** &nbsp; · &nbsp; **[`project archive`](./Task%202%20-%20EduInsight.zip)**
 
 ---
 
-# Task 03 · Linear Algebra & Calculus for ML
+## 03 / Linear Algebra & Calculus for ML
 
-### From vectors to backpropagation intuition
+### Because apparently maths was going to matter.
 
-This notebook connects core mathematical concepts with their role in machine learning.
+A notebook exploring the mathematical building blocks that show up inside machine-learning models.
 
-### Topics explored
+**Explored**
 
-- Vectors and vector operations
-- Vector magnitude
-- Matrices, shapes and transpose
-- Dot product
-- Eigenvalues and eigenvectors
-- Derivatives
-- Gradients
-- Chain rule
-- Mathematical intuition behind neural-network learning
+`vectors` · `matrices` · `dot products` · `eigenvalues` · `eigenvectors` · `derivatives` · `gradients` · `chain rule`
 
-The implementations use **NumPy** for computation and **Matplotlib** for visualisation, with ML-focused explanations alongside the calculations.
+The notebook uses **NumPy** for computation and **Matplotlib** for visualisation, connecting the calculations to ML and neural-network learning.
 
 <img src="https://skillicons.dev/icons?i=python,numpy,matplotlib" alt="Python NumPy Matplotlib" />
 
-**→ Notebook:** [`Task 3 - Week 5-6.ipynb`](./Task%203%20-%20Week%205-6.ipynb)
+**→ [`open notebook`](./Task%203%20-%20Week%205-6.ipynb)**
 
 ---
 
-# Task 04 · Student Performance Analysis
+## 04 / Student Performance Analysis
 
-### Turning student data into insights
+### Numbers are usually more interesting once you start asking questions.
 
-This notebook works with a **500-row student performance dataset** and explores academic and lifestyle-related variables.
+An exploratory analysis of a **500-row student performance dataset**, looking at academic and lifestyle-related variables through statistics and visualisation.
 
-### Dataset features include
+**Dataset**
 
-`Study Hours` · `Attendance` · `Previous Exam Score` · `Assignments` · `Sleep` · `Internet Access` · `Extracurricular Activities` · `Final Exam Score` · `Pass/Fail`
+`study hours` · `attendance` · `previous exam score` · `assignments` · `sleep` · `internet access` · `extracurricular activities` · `final exam score` · `pass/fail`
 
-### Workflow
+**Workflow**
 
-- Dataset inspection
-- Shape and column analysis
-- Descriptive statistics
-- Exploratory data analysis
-- Numerical and categorical variables
-- Visualisation of student-performance patterns
+`inspect` → `summarise` → `explore` → `visualise`
 
 <img src="https://skillicons.dev/icons?i=python,pandas,numpy,matplotlib,seaborn" alt="Python Pandas NumPy Matplotlib Seaborn" />
 
-**→ Notebook:** [`Task 4 hackoweek.ipynb`](./Task%204%20hackoweek.ipynb)
+**→ [`open notebook`](./Task%204%20hackoweek.ipynb)**
 
 ---
 
-# Task 05 · Model Evaluation & Feature Engineering
+## 05 / Model Evaluation & Feature Engineering
 
-### Building a more complete classification workflow
+### Training a model is one thing. Knowing whether it deserves to be trusted is another.
 
-The final notebook uses the **Titanic dataset** to demonstrate how a machine-learning model should be prepared and evaluated—not just trained.
+A Titanic classification workflow that goes beyond fitting a model and covers preprocessing, feature engineering and proper evaluation.
 
-### Covered
+**Inside the notebook**
 
-- Train / test split
-- Stratified cross-validation
-- Logistic Regression
-- Missing-value imputation
-- Feature scaling
-- One-hot encoding
-- Pipeline + ColumnTransformer
-- Confusion matrix
-- Precision
-- Recall
-- F1-score
-- ROC-AUC
-- ROC curve
+`train/test split` · `stratified CV` · `logistic regression` · `imputation` · `scaling` · `one-hot encoding` · `pipelines` · `confusion matrix` · `precision` · `recall` · `F1` · `ROC-AUC`
 
-The workflow brings together **preprocessing, feature engineering and model evaluation** into a reproducible classification pipeline.
+The workflow uses **Scikit-learn pipelines and ColumnTransformer** to keep preprocessing and modelling together.
 
 <img src="https://skillicons.dev/icons?i=python,sklearn" alt="Python Scikit-learn" />
 
-**→ Notebook:** [`Task 5 - Week 9-10.ipynb`](./Task%205%20-%20Week%209-10.ipynb)
+**→ [`open notebook`](./Task%205%20-%20Week%209-10.ipynb)**
 
 ---
 
-## ✦ What this collection represents
+## The progression
 
-These aren't five disconnected files—they show a progression:
+It started with **building** things.
+
+Then came **understanding** what sits underneath them.
+
+Then **looking at data**.
+
+And finally, **making a model and actually evaluating it**.
 
 ```text
-BUILD
-  ↓
-Web interfaces + backend integration
-  ↓
-PROJECT
-  ↓
-Applied problem solving
-  ↓
-UNDERSTAND
-  ↓
-Linear algebra + calculus for ML
-  ↓
-ANALYSE
-  ↓
-Data exploration + visualisation
-  ↓
-EVALUATE
-  ↓
-Feature engineering + model evaluation
+WEB
+ │
+ ├── build an interface
+ ├── connect a backend
+ └── make something usable
+       │
+       ▼
+MATH
+ │
+ ├── vectors
+ ├── matrices
+ └── calculus for ML
+       │
+       ▼
+DATA
+ │
+ ├── inspect
+ ├── analyse
+ └── visualise
+       │
+       ▼
+ML
+ │
+ ├── preprocess
+ ├── engineer features
+ └── evaluate
 ```
 
-A mix of **implementation, experimentation and learning-by-building**.
+Not a perfectly linear journey. Just a record of what I was learning by actually doing it.
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools I ended up using
 
 <p>
   <img src="https://skillicons.dev/icons?i=python,html,css,js,flask,sqlite,pandas,numpy,sklearn,matplotlib" alt="Python HTML CSS JavaScript Flask SQLite Pandas NumPy Scikit-learn Matplotlib" />
@@ -211,8 +185,6 @@ A mix of **implementation, experimentation and learning-by-building**.
 
 <div align="center">
 
-### ✦ Hackoweek · Semester V
-
-*build something · break something · understand why it works*
+`semester project archive` &nbsp;·&nbsp; `built while learning` &nbsp;·&nbsp; `still figuring things out`
 
 </div>
