@@ -2,9 +2,9 @@
 
 # HACKOWEEK
 
-### five tasks · one semester · a lot of figuring things out
+### Semester V · Practical Work & Experiments
 
-A collection of things I built, analysed and experimented with — from web apps and interfaces to the maths and workflows behind machine learning.
+**Web Development** · **Data Analysis** · **Mathematics for ML** · **Machine Learning**
 
 <br>
 
@@ -12,7 +12,7 @@ A collection of things I built, analysed and experimented with — from web apps
 
 <br><br>
 
-`01` LostLink Campus &nbsp;·&nbsp; `02` EduInsight &nbsp;·&nbsp; `03` Maths for ML &nbsp;·&nbsp; `04` Data Analysis &nbsp;·&nbsp; `05` ML Evaluation
+`01` WEB　→　`02` BUILD　→　`03` MATH　→　`04` DATA　→　`05` ML
 
 </div>
 
@@ -20,87 +20,83 @@ A collection of things I built, analysed and experimented with — from web apps
 
 ## 01 / LostLink Campus
 
-### Lost something? Start here.
+### Lost & Found, built for campus life.
 
-A campus lost-and-found web application built around reporting, discovering and claiming lost items.
+A campus lost-and-found web application for **reporting, discovering and claiming lost items**, combining a frontend with a Flask backend and database-backed workflows.
 
-The project brings together a frontend, **Flask backend** and database-driven functionality rather than stopping at a static interface.
-
-**What’s inside**
+**Includes**
 
 `report items` · `browse` · `claims` · `admin panel` · `item management` · `statistics`
 
-**Stack**
-
 <img src="https://skillicons.dev/icons?i=html,css,js,flask,sqlite" alt="HTML CSS JavaScript Flask SQLite" />
 
-### A look at it
+### Preview
 
 <p align="center">
-  <img src="assets/task%201/task%201.png" alt="LostLink Campus screenshot 1" width="82%">
+  <img src="assets/task%201/task%201.png" alt="LostLink Campus screenshot 1" width="86%">
 </p>
 
 <p align="center">
-  <img src="assets/task%201/task-1.png" alt="LostLink Campus screenshot 2" width="82%">
+  <img src="assets/task%201/task-1.png" alt="LostLink Campus screenshot 2" width="86%">
 </p>
 
-**→ [`open the project`](./task%201/)**
+**→ [`Explore Task 01`](./task%201/)**
 
 ---
 
 ## 02 / EduInsight
 
-### An education-focused build
+### An education-focused build.
 
-The second task is included as a project archive, with screenshots showing the implemented result.
+The second task is included with its project archive and a visual record of the implemented result.
 
-### A look at it
+### Preview
 
 <p align="center">
-  <img src="assets/task%202/Screenshot%20(670).png" alt="EduInsight screenshot 1" width="82%">
+  <img src="assets/task%202/Screenshot%20(670).png" alt="EduInsight screenshot 1" width="86%">
 </p>
 
 <p align="center">
-  <img src="assets/task%202/Screenshot%20(671).png" alt="EduInsight screenshot 2" width="82%">
+  <img src="assets/task%202/Screenshot%20(671).png" alt="EduInsight screenshot 2" width="86%">
 </p>
 
 <p align="center">
-  <img src="assets/task%202/Screenshot%20(672).png" alt="EduInsight screenshot 3" width="82%">
+  <img src="assets/task%202/Screenshot%20(672).png" alt="EduInsight screenshot 3" width="86%">
 </p>
 
 <p align="center">
-  <img src="assets/task%202/Screenshot%20(673).png" alt="EduInsight screenshot 4" width="82%">
+  <img src="assets/task%202/Screenshot%20(673).png" alt="EduInsight screenshot 4" width="86%">
 </p>
 
-**→ [`view screenshots`](./assets/task%202/)** &nbsp; · &nbsp; **[`project archive`](./Task%202%20-%20EduInsight.zip)**
+**→ [`View screenshots`](./assets/task%202/)** &nbsp; · &nbsp; **[`Project archive`](./Task%202%20-%20EduInsight.zip)**
 
 ---
 
 ## 03 / Linear Algebra & Calculus for ML
 
-### Because apparently maths was going to matter.
+### The mathematical foundations behind the models.
 
-A notebook exploring the mathematical building blocks that show up inside machine-learning models.
+A notebook covering the concepts that form part of the mathematical toolkit for machine learning.
 
 **Explored**
 
 `vectors` · `matrices` · `dot products` · `eigenvalues` · `eigenvectors` · `derivatives` · `gradients` · `chain rule`
 
-The notebook uses **NumPy** for computation and **Matplotlib** for visualisation, connecting the calculations to ML and neural-network learning.
+The implementations use **NumPy** for computation and **Matplotlib** for visualisation, with the concepts connected to ML and neural-network learning.
 
 <img src="https://skillicons.dev/icons?i=python,numpy,matplotlib" alt="Python NumPy Matplotlib" />
 
-**→ [`open notebook`](./Task%203%20-%20Week%205-6.ipynb)**
+**→ [`Open Task 03 notebook`](./Task%203%20-%20Week%205-6.ipynb)**
 
 ---
 
 ## 04 / Student Performance Analysis
 
-### Numbers are usually more interesting once you start asking questions.
+### Exploring what the data says.
 
-An exploratory analysis of a **500-row student performance dataset**, looking at academic and lifestyle-related variables through statistics and visualisation.
+An exploratory analysis of a **500-row student performance dataset**, combining dataset inspection, descriptive statistics and visualisation.
 
-**Dataset**
+**Variables**
 
 `study hours` · `attendance` · `previous exam score` · `assignments` · `sleep` · `internet access` · `extracurricular activities` · `final exam score` · `pass/fail`
 
@@ -110,81 +106,80 @@ An exploratory analysis of a **500-row student performance dataset**, looking at
 
 <img src="https://skillicons.dev/icons?i=python,pandas,numpy,matplotlib,seaborn" alt="Python Pandas NumPy Matplotlib Seaborn" />
 
-**→ [`open notebook`](./Task%204%20hackoweek.ipynb)**
+**→ [`Open Task 04 notebook`](./Task%204%20hackoweek.ipynb)**
 
 ---
 
 ## 05 / Model Evaluation & Feature Engineering
 
-### Training a model is one thing. Knowing whether it deserves to be trusted is another.
+### Training is only the beginning.
 
-A Titanic classification workflow that goes beyond fitting a model and covers preprocessing, feature engineering and proper evaluation.
+A Titanic classification workflow covering preprocessing, feature engineering, cross-validation and model evaluation.
 
-**Inside the notebook**
+**Workflow**
 
-`train/test split` · `stratified CV` · `logistic regression` · `imputation` · `scaling` · `one-hot encoding` · `pipelines` · `confusion matrix` · `precision` · `recall` · `F1` · `ROC-AUC`
+`imputation` → `encoding` → `scaling` → `logistic regression` → `cross-validation` → `evaluation`
 
-The workflow uses **Scikit-learn pipelines and ColumnTransformer** to keep preprocessing and modelling together.
+**Metrics**
+
+`confusion matrix` · `precision` · `recall` · `F1` · `ROC-AUC` · `ROC curve`
+
+The notebook uses **Scikit-learn pipelines and ColumnTransformer** to keep preprocessing and modelling together.
 
 <img src="https://skillicons.dev/icons?i=python,sklearn" alt="Python Scikit-learn" />
 
-**→ [`open notebook`](./Task%205%20-%20Week%209-10.ipynb)**
+**→ [`Open Task 05 notebook`](./Task%205%20-%20Week%209-10.ipynb)**
 
 ---
 
-## The progression
+## From development → data → ML
 
-It started with **building** things.
+<p align="center">
 
-Then came **understanding** what sits underneath them.
+**01 — WEB**
+<br>
+<sub>interfaces · backend · databases</sub>
 
-Then **looking at data**.
+<br>↓<br>
 
-And finally, **making a model and actually evaluating it**.
+**02 — BUILD**
+<br>
+<sub>applied problem solving</sub>
 
-```text
-WEB
- │
- ├── build an interface
- ├── connect a backend
- └── make something usable
-       │
-       ▼
-MATH
- │
- ├── vectors
- ├── matrices
- └── calculus for ML
-       │
-       ▼
-DATA
- │
- ├── inspect
- ├── analyse
- └── visualise
-       │
-       ▼
-ML
- │
- ├── preprocess
- ├── engineer features
- └── evaluate
-```
+<br>↓<br>
 
-Not a perfectly linear journey. Just a record of what I was learning by actually doing it.
+**03 — MATH**
+<br>
+<sub>vectors · calculus · ML foundations</sub>
+
+<br>↓<br>
+
+**04 — DATA**
+<br>
+<sub>exploration · statistics · visualisation</sub>
+
+<br>↓<br>
+
+**05 — ML**
+<br>
+<sub>preprocessing · modelling · evaluation</sub>
+
+</p>
 
 ---
 
-## Tools I ended up using
+## Stack
 
-<p>
-  <img src="https://skillicons.dev/icons?i=python,html,css,js,flask,sqlite,pandas,numpy,sklearn,matplotlib" alt="Python HTML CSS JavaScript Flask SQLite Pandas NumPy Scikit-learn Matplotlib" />
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,html,css,js,flask,sqlite,pandas,numpy,sklearn,matplotlib,seaborn" alt="Python HTML CSS JavaScript Flask SQLite Pandas NumPy Scikit-learn Matplotlib Seaborn" />
 </p>
 
 ---
 
 <div align="center">
 
-`semester project archive` &nbsp;·&nbsp; `built while learning` &nbsp;·&nbsp; `still figuring things out`
+**HACKOWEEK · SEMESTER V**
+
+*Practical work across development, data and machine learning.*
 
 </div>
