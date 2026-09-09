@@ -2,15 +2,15 @@
 
 # HACKOWEEK
 
-A collection of Hackoweek tasks covering **web development, data analysis, mathematics for machine learning, and machine-learning workflows**.
+A collection of Hackoweek work spanning **web development, data analysis, mathematics for machine learning, and practical machine-learning workflows**.
 
 <br>
 
-<img src="https://skillicons.dev/icons?i=html,css,js,python,flask,sqlite" alt="HTML CSS JavaScript Python Flask SQLite" />
+<img src="https://skillicons.dev/icons?i=html,css,js,python,flask,sqlite,sklearn" alt="HTML CSS JavaScript Python Flask SQLite Scikit-learn" />
 
 <br><br>
 
-`01` LostLink Campus &nbsp;·&nbsp; `02` EduInsight &nbsp;·&nbsp; `03` Mathematics for ML &nbsp;·&nbsp; `04` Data Analysis &nbsp;·&nbsp; `05` ML Evaluation
+`01` LostLink Campus &nbsp;·&nbsp; `02` EduInsight &nbsp;·&nbsp; `03` Mathematics for ML &nbsp;·&nbsp; `04` Data Analysis &nbsp;·&nbsp; `05` ML Evaluation &nbsp;·&nbsp; `06` Clustering
 
 </div>
 
@@ -134,40 +134,83 @@ The notebook uses **Scikit-learn pipelines and ColumnTransformer** to integrate 
 
 ---
 
-## The progression
+## 06 / Clustering with Scikit-learn
 
-The collection moves from **application development** to the mathematical and analytical foundations of machine learning.
+### Exploring unsupervised learning through clustering.
+
+The sixth task extends the machine-learning workflow into **unsupervised learning**, using a wine dataset and comparing different clustering approaches.
+
+The notebook covers the Scikit-learn workflow and introduces three widely used clustering algorithms:
 
 ```text
-WEB
+K-MEANS
+   ↓
+centroid-based clustering
+
+HIERARCHICAL CLUSTERING
+   ↓
+dendrogram / nested groups
+
+DBSCAN
+   ↓
+density-based clustering + noise detection
+```
+
+**Algorithms explored**
+
+`K-Means` · `Hierarchical Clustering` · `DBSCAN`
+
+**Focus**
+
+`clustering workflow` · `feature preparation` · `unsupervised learning` · `cluster visualisation` · `algorithm comparison`
+
+<img src="https://skillicons.dev/icons?i=python,sklearn,pandas,numpy,matplotlib" alt="Python Scikit-learn Pandas NumPy Matplotlib" />
+
+**→ [`Open notebook`](./Task%206%20Week%209-10.ipynb)**
+
+---
+
+## The progression
+
+The collection gradually moves from **building applications** to understanding the mathematical, analytical, and modelling foundations behind machine learning.
+
+```text
+BUILD
  │
  ├── interface development
  ├── backend integration
  └── database-driven functionality
        │
        ▼
-MATH
+UNDERSTAND
  │
  ├── vectors
  ├── matrices
  └── calculus for ML
        │
        ▼
-DATA
+ANALYSE
  │
  ├── data inspection
  ├── statistical analysis
  └── visualisation
        │
        ▼
-ML
+MODEL
  │
  ├── preprocessing
  ├── feature engineering
- └── model evaluation
+ └── evaluation
+       │
+       ▼
+DISCOVER
+ │
+ ├── K-Means
+ ├── hierarchical clustering
+ └── DBSCAN
 ```
 
-Together, the tasks document practical work across development, data analysis, and machine learning.
+Together, the tasks document a progression from **development → data → machine learning → unsupervised learning**.
 
 ---
 
@@ -181,6 +224,6 @@ Together, the tasks document practical work across development, data analysis, a
 
 <div align="center">
 
-`Semester V` &nbsp;·&nbsp; `Practical Work` &nbsp;·&nbsp; `Machine Learning & Development`
+`Semester V` &nbsp;·&nbsp; `Practical Work` &nbsp;·&nbsp; `Data` &nbsp;·&nbsp; `Machine Learning`
 
 </div>
